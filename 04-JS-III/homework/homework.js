@@ -67,7 +67,6 @@ function arrayContiene(array, elemento) {
   }return false
   }
   
-  
 
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
