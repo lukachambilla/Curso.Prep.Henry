@@ -1,19 +1,19 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = 'hola';
+const nuevaString = "hola";
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 23;
 
 // Crea una variable booleana:
-const nuevoBool = true;
+const nuevoBool = false;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * 4 === 40 ;
+const nuevaMultiplicacion = 10 * 4 === 40;
 
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
@@ -35,7 +35,7 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  return  x + y
+  return x + y
 }
 
 function resta(x, y) {
@@ -71,11 +71,11 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-if(str1.length === str2.length){
-  return true
-}else{
-  return false
-}
+ if(str1.length === str2.length){
+   return true
+ }else{
+   return false
+ }
 }
 
 function menosQueNoventa(num) {
@@ -93,7 +93,7 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num>50){
+  if(num > 50){
     return true
   }else{
     return false
@@ -121,11 +121,11 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num%2===1){
+  if(num%2 === 1){
     return true
   }else{
     return false
-   }
+  }
   }
 
 function elevarAlCuadrado(num) {
@@ -138,7 +138,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-return num * num * num  
+  return num * num * num
 }
 
 function elevar(num, exponent) {
@@ -150,19 +150,19 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Math.round (num)
+  return Math.round(num)
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return Math.ceil (num)
+  return Math.ceil(num)
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return Math.random ()
+return Math.random(0.7)  
 }
 
 function esPositivo(numero) {
@@ -174,7 +174,7 @@ function esPositivo(numero) {
     return "Es positivo"
   }else if(numero < 0){
     return "Es negativo"
-  }else{
+  }else if(numero === 0){
     return false
   }
   }
@@ -221,7 +221,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
- return euro * 1.20 
+ return euro * 1.20
 }
 
 function esVocal(letra){
@@ -230,15 +230,15 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
-if(letra.length > 1 ){
-  return "Dato incorrecto"
-  } if( letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+  if (letra.length > 1){
+    return "Dato incorrecto"
+  }else if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
     return "Es vocal"
     }else{
-    return "Dato incorrecto"
+      return "Dato incorrecto"
   }
-}
+  }
+  
 // No modificar nada debajo de esta línea
 // --------------------------------
 
